@@ -1,6 +1,6 @@
 section{
   display: none;
-  height: 100%;
+  // height: 100%;
 
   &.active, &.seen{
     display: block;
@@ -17,6 +17,7 @@ section{
   }
 
   &.loading.active{
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
