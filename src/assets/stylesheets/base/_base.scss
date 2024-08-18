@@ -5,6 +5,7 @@ body{
   background-color: $bg-color;
   color: $white;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 main{
