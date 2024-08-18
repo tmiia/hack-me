@@ -11,6 +11,26 @@
     display: block;
   }
 
+  .btn-download{
+    z-index: 1000;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    background-color: $grey-op;
+    padding: 0.5rem 0.6rem;
+    border-radius: 50px;
+    transition: all ease-in-out .3s;
+
+    i{
+      font-family: "FontAwesome";
+      color: $full-white;
+    }
+
+    &:hover{
+      scale: 1.15;
+    }
+  }
+
   iframe{
     // TODO : breaking point
     width: 700px;
