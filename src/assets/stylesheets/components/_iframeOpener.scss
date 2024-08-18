@@ -1,0 +1,8 @@
+.iframeOpener{
+  width: fit-content;
+  cursor: pointer;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,47 @@
+.win-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.5rem 0.5rem;
+  background-color: $dark-blue;
+  border-radius: 10px 10px 0 0;
+
+  .win-btn-list{
+    display: flex;
+    gap: 0.5rem;
+    margin-right: auto;
+
+    .win-btn{
+      width: 12px;
+      height: 12px;
+      border-radius: 10px;
+      background-color: black;
+      cursor: pointer;
+
+      &.close{
+        background-color: $red;
+      }
+      &.reduce{
+        background-color: $grey;
+      }
+      &.resize{
+        background-color: $green;
+      }
+    }
+  }
+
+  .win-info {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    span {
+      display: block;
+    }
+  }
+}
+
+.win-main{
+  padding: 1rem 0.5rem;
+  height: -webkit-fill-available;
+}

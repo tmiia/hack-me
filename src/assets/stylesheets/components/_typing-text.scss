@@ -1,0 +1,7 @@
+.typing-text{
+  display: none;
+
+  &.active{
+    display: inline;
+  }
+}

@@ -1,0 +1,56 @@
+section{
+  display: none;
+  height: 100%;
+
+  &.active, &.seen{
+    display: block;
+  }
+
+  &.seen{
+    p{
+      opacity: 0.6;
+    }
+
+    .keep-white{
+      opacity: 1;
+    }
+  }
+
+  &.loading.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &.terminal{
+    height: fit-content;
+
+    p + p, & + section {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .instruction{
+    text-align: center;
+
+    & + .instruction{
+      margin-top: 0.5rem;
+    }
+  }
+
+  .cat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p{
+      text-align: center;
+      max-width: 70ch;
+      & + p {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

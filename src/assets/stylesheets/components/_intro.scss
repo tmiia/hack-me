@@ -1,0 +1,19 @@
+.intro{
+  span.disappear{
+    opacity: 0;
+  }
+
+  &-start.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    }
+
+}
+
+.ascii-art{
+  margin-bottom: 1rem;
+}

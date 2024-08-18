@@ -1,0 +1,20 @@
+.cursor{
+  display: none;
+}
+
+.active{
+  .cursor{
+    display: inline;
+    animation: cursor .8s infinite ease-in;
+  }
+
+  @keyframes cursor {
+    0%{
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 1;
+    }
+  }
+}

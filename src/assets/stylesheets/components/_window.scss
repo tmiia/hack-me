@@ -1,0 +1,21 @@
+.window{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  display: none;
+
+
+  &.active{
+    display: block;
+  }
+
+  iframe{
+    width: 700px;
+    height: 680px;
+    opacity: 0.8;
+    border-radius: 0 0 10px 10px;
+    background-color: $dark-blue;
+  }
+}
