@@ -7,6 +7,13 @@
   background-color: $dark-blue;
   border-radius: 10px 10px 0 0;
 
+  &.main-header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
   .win-btn-list{
     display: flex;
     gap: 0.5rem;
@@ -17,7 +24,10 @@
       height: 12px;
       border-radius: 10px;
       background-color: black;
-      cursor: pointer;
+
+      &.interactive{
+        cursor: pointer;
+      }
 
       &.close{
         background-color: $red;

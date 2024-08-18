@@ -2,6 +2,5 @@ body{
   position: relative;
   background-color: $bg-color;
   color: $white;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
 }
