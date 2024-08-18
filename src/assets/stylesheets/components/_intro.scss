@@ -9,8 +9,14 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-
+    .ascii-art, p {
+      opacity: 0;
     }
+
+    .cta{
+      margin-top: 1rem;
+    }
+  }
 
 }
 

@@ -15,7 +15,7 @@ const Intro = {
       onComplete: playScrambleText
     });
 
-    tl.fromTo(".ascii-art", {y: -35, opacity: 0}, {duration: .5, y: 0, opacity: 1});
+    tl.fromTo(".ascii-art", {y: -35}, {duration: .5, y: 0, opacity: 1});
     tl.fromTo("#fade1", {y: 5, opacity: 0}, {duration: .5, y: 0, opacity: 1});
     tl.fromTo("#fade3", {y: -7, opacity: 0}, {duration: .3, y: 0, opacity: 1}, "-=0.25");
     tl.fromTo("#fade2", {y: 5, opacity: 0}, {duration: .5, y: 0, opacity: 1}, "+=0.015");
