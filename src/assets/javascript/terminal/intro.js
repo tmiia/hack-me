@@ -11,7 +11,7 @@ const Intro = {
 
     let tl = gsap.timeline({
       ease: "power4.in",
-      delay: 1,
+      delay: 0.5,
       onComplete: playScrambleText
     });
 
@@ -45,76 +45,7 @@ const Intro = {
         scrambleText.start();
       });
     }
-
-
-
-
-
-
-
-
-
-    // const listP = this.introSect.querySelectorAll('p');
-
-    // listP.forEach(p => {
-    //   const text = p.innerText;
-    //   p.innerText = '';
-
-    //   for(let i = 0; i < text.length; i++) {
-    //     const span = document.createElement("span");
-    //     span.innerText = text[i];
-    //     span.setAttribute('data-original', text[i]);
-    //     p.appendChild(span);
-    //   }
-    // });
-
-    // const spans = this.introSect.querySelectorAll('span');
-    // this.spansCount = spans.length;
-
-    // spans.forEach(span => {
-    //   const delay = Math.random() * 1000;
-    //   setTimeout(() => {
-    //     this.animation(span);
-    //   }, delay);
-    // });
   },
-
-  animation(letter){
-    const alphabet = [
-      'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-      'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' ', '/', '.', '!', '?', '#', '@', ':'
-    ];
-
-    const min = 1500,
-          max = 3000;
-
-    let timer = setInterval(() => {
-      const showOriginal = Math.random() < 0.5;
-
-      if (showOriginal) {
-        letter.innerText = letter.getAttribute('data-original');
-      } else {
-        letter.innerText = alphabet[Math.floor(Math.random() * 34)];
-      }
-    }, Math.floor(Math.random() * (max - min + 1)) + min);
-
-    setTimeout(() => {
-      clearInterval(timer);
-      this.disappear(letter, this.checkCompletion.bind(this));
-    }, 3000);
-  },
-
-  disappear(letter, callback){
-    letter.classList.add('disappear');
-    callback();
-  },
-
-  checkCompletion() {
-    this.completedCount++;
-    if (this.completedCount === this.spansCount) {
-      Next.next();
-    }
-  }
 };
 
 export default Intro;
