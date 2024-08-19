@@ -11,7 +11,13 @@ const Intro = {
 
     let tl = gsap.timeline({
       ease: "power4.in",
-      delay: 0.5,
+      delay: 0.25,
+      onComplete: playScrambleText
+    });
+
+    let tl2 = gsap.timeline({
+      ease: "power4.in",
+      delay: 0.25,
       onComplete: playScrambleText
     });
 
@@ -21,6 +27,7 @@ const Intro = {
     tl.fromTo("#fade2", {y: 5, opacity: 0}, {duration: .5, y: 0, opacity: 1}, "+=0.015");
     tl.fromTo("#fade4", {y: 5, opacity: 0}, {duration: .7, y: 0, opacity: 1}, "+=0.7");
 
+    tl2.fromTo("#fade5", {y: 5, opacity: 0}, {duration: .5, y: 0, opacity: 1});
 
     let scrambleTexts = [];
 

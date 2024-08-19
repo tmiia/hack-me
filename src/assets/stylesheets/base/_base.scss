@@ -13,3 +13,34 @@ main{
   display: flex;
   flex-direction: column;
 }
+
+.mobile-warning{
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  body{
+    overflow: hidden;
+  }
+
+  .win-main{
+    display: none;
+  }
+
+  .mobile-warning{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .ascii-art, p {
+      opacity: 0;
+    }
+  }
+}
